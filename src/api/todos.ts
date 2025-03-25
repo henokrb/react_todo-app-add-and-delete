@@ -13,7 +13,7 @@ export const addTodo = ({ title, userId, completed }: Omit<Todo, 'id'>) => {
   return client.post<Todo>(`/todos`, { title, userId, completed });
 };
 
-// Delete a Particular Todo
+// Delete a Particular Toto
 export const deleteTodo = (todoId: number) => {
   return client.delete(`/todos/${todoId}`);
 };
